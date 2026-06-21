@@ -1,3 +1,5 @@
+# Task-1: ARTHMETIC LOGIC UNIT (ALU)
+
 # Abstract
 
 The Arithmetic Logic Unit (ALU) is one of the most important components of a computer's Central Processing Unit (CPU). It is responsible for performing arithmetic operations such as addition and subtraction, as well as logical operations like AND, OR, and NOT. The ALU plays a vital role in processing data and executing instructions within a computer system. This project focuses on the design and implementation of a basic ALU using Verilog/VHDL. The ALU performs various arithmetic and logical operations based on the select signal provided as input. A testbench is used to verify the functionality of the design through simulation. The simulation results confirm that the ALU operates correctly and produces the expected outputs for different input combinations. This project provides a clear understanding of digital circuit design, hardware description languages, and the role of the ALU in modern computing systems.
@@ -102,9 +104,66 @@ The ALU was successfully designed and tested using simulation. The results show 
 
 The Arithmetic Logic Unit (ALU) is a fundamental component of the Central Processing Unit (CPU) that performs arithmetic and logical operations required for data processing. In this project, a basic ALU was successfully designed and implemented to perform operations such as addition, subtraction, AND, OR, and NOT. The simulation results verified that the ALU functions correctly according to the given select signals. This project helped in understanding the principles of digital circuit design, hardware description languages, and processor architecture. Overall, the successful implementation of the ALU demonstrates its importance in computer systems and provides a strong foundation for learning advanced digital design concepts.
 
+# Program
 
+Module ALU (
+    input [3:0] A,
+    input [3:0] B,
+    input [2:0] sel,
+    output reg [3:0] result
+);
 
-   
+always @(*) begin
+    case(sel)
+        3'b000: result = A + B;   // Addition
+        3'b001: result = A - B;   // Subtraction
+        3'b010: result = A & B;   // AND
+        3'b011: result = A | B;   // OR
+        3'b100: result = A ^ B;   // XOR
+        3'b101: result = ~A;      // NOT
+        default: result = 4'b0000;
+    endcase
+end
+
+endmodule
+
+# Testbench
+
+module ALU_tb;
+
+reg [3:0] A;
+reg [3:0] B;
+reg [2:0] sel;
+wire [3:0] result;
+
+ALU uut (
+    .A(A),
+    .B(B),
+    .sel(sel),
+    .result(result)
+);
+
+initial begin
+
+    A = 4'b1010;
+    B = 4'b0101;
+
+    sel = 3'b000; #10; // Addition
+    sel = 3'b001; #10; // Subtraction
+    sel = 3'b010; #10; // AND
+    sel = 3'b011; #10; // OR
+    sel = 3'b100; #10; // XOR
+    sel = 3'b101; #10; // NOT
+
+    $finish;
+end
+
+initial begin
+    $monitor("A=%b B=%b Sel=%b Result=%b",
+              A, B, sel, result);
+end
+
+endmodule   
 
 
 
