@@ -106,7 +106,7 @@ The Arithmetic Logic Unit (ALU) is a fundamental component of the Central Proces
 
 # Program
 
-Module ALU (
+module ALU (
     input [3:0] A,
     input [3:0] B,
     input [2:0] sel,
