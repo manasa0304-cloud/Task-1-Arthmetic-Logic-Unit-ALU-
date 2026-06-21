@@ -26,3 +26,38 @@ An Arithmetic Logic Unit (ALU) is an essential component of digital systems and 
 # Arithmetic Logic Unit (ALU)
 
 The Arithmetic Logic Unit (ALU) is a key part of the Central Processing Unit (CPU) that performs arithmetic and logical operations. It is responsible for carrying out calculations such as addition and subtraction, as well as logical operations like AND, OR, and NOT. The ALU processes data according to the instructions provided by the Control Unit and generates the required output. It plays an important role in data processing, decision-making, and the execution of computer programs. As one of the core components of a processor, the ALU helps improve the speed and efficiency of computer systems and is essential for the proper functioning of all digital devices.
+
+# ARITHMETIC OPERATIONS
+
+# Addition
+
+Addition combines two binary numbers to produce a sum.
+Example: A = 1010, B = 0101, Result = 1111
+
+# Subtraction
+
+Subtraction computes the difference between two binary numbers.
+Example: A = 1010, B = 0101, Result = 0101
+
+# LOGICAL OPERATIONS
+
+# AND Operation
+
+Produces logic 1 only when both inputs are 1.
+Example: A = 1010, B = 0101, Result = 0000
+
+# OR Operation
+
+Produces logic 1 when at least one input is 1.
+Example: A = 1010, B = 0101, Result = 1111
+
+# XOR Operation
+
+Produces logic 1 when the inputs are different.
+Example: A = 1010, B = 0101, Result = 1111
+
+# NOT Operation
+
+Inverts all bits of the input.
+Example: A = 1010, Result = 0101
+
