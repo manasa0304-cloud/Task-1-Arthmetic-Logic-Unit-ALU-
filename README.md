@@ -86,6 +86,21 @@ The ALU was successfully designed and tested using simulation. The results show 
 4. Improves the speed of the computer.
 5. Can perform many operations like addition, subtraction, AND, and OR.
 
+# Limitations 
+
+.Performs only calculations and logic operations.
+.Cannot store data permanently.
+.Needs instructions from the Control Unit
+
+# Future Scope 
+
+.Develop advanced ALUs capable of performing more complex operations.
+.Increase processing speed and efficiency in modern processors.
+.Reduce power consumption for better energy efficiency.
+
+
+
+
 
    
 
