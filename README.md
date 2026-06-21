@@ -61,3 +61,8 @@ Example: A = 1010, B = 0101, Result = 1111
 Inverts all bits of the input.
 Example: A = 1010, Result = 0101
 
+# ALU Operation Table
+
+# Select Signal # Operation
+
+The ALU performs different operations based on the select signal provided. When the select signal is 000, the ALU performs Addition. For 001, it performs Subtraction. The select signal 010 is used for the AND operation, while 011 selects the OR operation. When the select signal is 100, the ALU performs the XOR operation, and 101 selects the NOT operation. The select signals 110 and 111 are reserved for future use or additional operations. This select signal mechanism allows a single ALU to perform multiple arithmetic and logical functions efficiently.
