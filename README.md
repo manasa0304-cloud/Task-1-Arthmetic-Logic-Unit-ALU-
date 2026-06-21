@@ -1,1 +1,3 @@
-# Task-1-Arthmetic-Logic-Unit-ALU-
+# Abstract
+
+The Arithmetic Logic Unit (ALU) is one of the most important components of a computer's Central Processing Unit (CPU). It is responsible for performing arithmetic operations such as addition and subtraction, as well as logical operations like AND, OR, and NOT. The ALU plays a vital role in processing data and executing instructions within a computer system. This project focuses on the design and implementation of a basic ALU using Verilog/VHDL. The ALU performs various arithmetic and logical operations based on the select signal provided as input. A testbench is used to verify the functionality of the design through simulation. The simulation results confirm that the ALU operates correctly and produces the expected outputs for different input combinations. This project provides a clear understanding of digital circuit design, hardware description languages, and the role of the ALU in modern computing systems.
